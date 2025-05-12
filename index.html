@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chaveiro Elite BC</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #003366, #0055a5);
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #0055a5;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #003366;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      font-size: 2em;
+      color: #003366;
+      margin-bottom: 20px;
+      border-left: 5px solid #0055a5;
+      padding-left: 10px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    a.button {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+      transition: background 0.3s;
+    }
+
+    a.button:hover {
+      background-color: #1ebe5d;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+      width: 100%;
+    }
+
+    input[type="submit"] {
+      background-color: #0055a5;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #003f7f;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 24px;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      nav a {
+        padding: 12px 10px;
+      }
+
+      h2 {
+        font-size: 1.6em;
+      }
+    }
+
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url("fundo-bc.jpg.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(255,255,255,0.8); /* camada branca semitransparente */
+  z-index: -1;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Chaveiro Elite BC</h1>
+    <p>Para nós, não tem segredo!</p>    
+     <p><strong>ATENDIMENTO 24 HORAS</strong></p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+    <a href="https://www.instagram.com/chaveiroelitebc/" target="_blank">Instagram</a>
+  </nav>
+
+  <main>
+    <section id="sobre" class="card">
+      <h2>Sobre Nós</h2>
+      <p>Somos especialistas em soluções de chaves e fechaduras, com atendimento rápido, seguro e profissional em Balneário Camboriú e região.</p>
+    </section>
+
+    <section id="servicos" class="card">
+     <h2>Serviços</h2>
+     <ul>
+    <li>Abertura de portas residenciais, comerciais e automotivas</li>
+    <li>Troca de fechaduras</li>
+    <li>Confecção de chaves (cópias)</li>
+    <li>Programação de chaves codificadas</li>
+    <li>Abertura de cofres</li>
+    <li>Instalação de fechaduras e travas de segurança</li>
+    <li>Desbloqueio de ignição de veículos</li>
+    <li>Extração de chaves quebradas</li>
+    <li>Instalação e manutenção de fechaduras eletrônicas</li>
+    <li>Conserto de fechaduras e trancas</li>
+    <li>Atendimento 24 horas em emergências</li>
+  </ul>
+    </section>
+
+    <section id="contato" class="card">
+      <h2>Contato</h2>
+      <p><strong>Telefone/WhatsApp:</strong> <a href="tel:+5547999256292">(47) 99925-6292</a></p>
+      <p><strong>Email:</strong> chaveiroelitebc@gmail.com</p>
+      <a class="button" href="https://wa.me/5547999256292" target="_blank">
+        <i class="fab fa-whatsapp"></i> Enviar mensagem no WhatsApp
+      </a>
+
+         <h3 style="margin-top: 40px;">Localização</h3>
+     <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.7018749462213!2d-48.63228028507321!3d-26.992662183360288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8c9f8c1347c3f%3A0xcea08c9420e67ec!2sAv.%20Brasil%2C%202881%20-%20Sala%208%20-%20Centro%2C%20Balne%C3%A1rio%20Cambori%C3%BA%20-%20SC%2C%2088330-048!5e0!3m2!1spt-BR!2sbr!4v1715533080951!5m2!1spt-BR!2sbr" 
+     width="100%" 
+     height="300" 
+     style="border:0; border-radius:10px;" 
+     allowfullscreen="" 
+     loading="lazy" 
+     referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    </section>
+  </main>
+
+    <section class="card">
+  <h2>Avaliações dos Clientes</h2>
+  <p>Veja o que nossos clientes estão dizendo sobre nós no Google!</p>
+  <div style="font-size: 1.5em; color: #f4c542; margin: 10px 0;">
+    ★★★★★
+  </div>
+  <p><strong>Classificação 5.0</strong> com base em várias avaliações reais.</p>
+  <a class="button" href="https://g.co/kgs/NWWzxSo" target="_blank">
+    <i class="fas fa-star"></i> Ver avaliações no Google
+  </a>
+</section>
+
+    ...
+</section> <!-- fechamento da seção de contato -->
+
+<!-- Insira aqui o bloco de avaliações -->
+<section class="card">...</section>
+
+    <footer>
+...
+
+  <footer>
+    <p>&copy; 2025 Chaveiro Elite BC. Todos os direitos reservados.</p>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5547999256292" target="_blank" title="Fale conosco no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+</body>
+</html>
